@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css">
+<head><link rel="stylesheet" href="styles.css">
     <script type="text/javascript" src="script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,54 @@
     <title>Zadaca 1</title>
 </head>
 <body>
+    <h2>Details</h2>
 
-    <div>HH</div>
+    <table id="mainTable">
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone</label></td>
+            <td><input type="text" id="phone"></td>
+            
+        </tr>
+        <tr>
+            <td><label for="index">Index</label></td>
+            <td><input type="text" id="index"></td>
+            
+        </tr>
+        <tr>
+            <td><label for="grade">Grade</label></td>
+            <td id="radios">
+                <input type="radio" name="grade" value="5">5
+                <input type="radio" name="grade" value="6">6
+                <input type="radio" name="grade" value="7">7
+                <input type="radio" name="grade" value="8">8
+                <input type="radio" name="grade" value="9">9
+                <input type="radio" name="grade" value="10">10
+            </td>
+        </tr>
+        <tr>
+            <td><label for="session">Session</label></td>
+            <td><select>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Import student"></td>
+        </tr>
+    </table>
 </body>
 </html>
