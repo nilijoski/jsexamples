@@ -11,24 +11,23 @@
     <h2>Details</h2>
 
     <table id="mainTable">
+        <form id="form">
         <tr>
             <td><label for="name">Name</label></td>
-            <td><input type="text" id="name"></td>
+            <td><input type="text" id="name" required></td>
         </tr>
         <tr>
             <td><label for="phone">Phone</label></td>
-            <td><input type="text" id="phone"></td>
-            
+            <td><input type="text" id="phone" required></td>
         </tr>
         <tr>
             <td><label for="index">Index</label></td>
-            <td><input type="text" id="index"></td>
-            
+            <td><input type="text" id="index" required></td>
         </tr>
         <tr>
             <td><label for="grade">Grade</label></td>
             <td id="radios">
-                <input type="radio" name="grade" value="5">5
+                <input type="radio" name="grade" value="5" required>5
                 <input type="radio" name="grade" value="6">6
                 <input type="radio" name="grade" value="7">7
                 <input type="radio" name="grade" value="8">8
@@ -54,8 +53,9 @@
             </select></td>
         </tr>
         <tr>
-            <td><input type="button" value="Import student"></td>
+            <td><button type="submit" value="Import student" onclick="importStudent()">Import student</td>
         </tr>
     </table>
+</form>
 </body>
 </html>
